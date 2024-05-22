@@ -17,7 +17,6 @@ import com.example.praktikum10.model.AddMahasiswaResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 public class MainActivity extends AppCompatActivity {
 
     private EditText edtNrp;
@@ -51,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
     }
-
     private void addDataMahasiswa() {
         showLoading(true);
         String nrp = edtNrp.getText().toString();
@@ -86,8 +84,6 @@ public class MainActivity extends AppCompatActivity {
             });
         }
     }
-
-
     private void showLoading(Boolean isLoading) {
         if (isLoading) {
             progressBar.setVisibility(View.VISIBLE);
